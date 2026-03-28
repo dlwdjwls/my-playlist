@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최애 앨범 소개</title>
+    
+    <style>
+        /* 여기서부터 자유롭게 코딩을 시작하세요! */
+        /* (강사님이 주신 필수 색상 2개 잊지 마세요!) */
+
+        * {
+            margin: 40px;
+            padding: 5px;
+            /* 테두리 두께를 크기에 포함시키는 마법의 속성 (나중에 배웁니다!) */
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-color: #C0C0C0;
+            color: #4b3621; 
+            font-family: serif;
+        }
+        .lyrics-box {
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            border: 1px solid #dcdcdc; 
+            border-radius: 2px; 
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            border-top: 3px dashed #bcaaa4;
+        }
+
+        .highlight {
+            color: #4b3621;  /* 핫핑크 */
+            background: #ffd700; /* 골드 */
+        }
+               
+        #track-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .listen-btn {
+            background: #4b3621; 
+            color: #ec4899;
+            border-radius: 50px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header id="album-header">
+        <p class="artist-name">프론트엔드 4조</p>
+        <h1>MIXTAPE</h1>
+        <p class="subtitle">다채로운 매력으로 가득 찬 플레이리스트</p>
+    </header>
+
+    <section class="lyrics-section">
+        <h2>🎵 킬링 파트 가사 🎵</h2>
+        <div class="lyrics-box">
+            <p>I won't let you down, I won't leave you alone - Vancouver2</p>
+            <p class="highlight">I got the love 'cause I got this real, real love - O</p>
+            <p>I'm rolling in the deep inside of you - Aqua Man</p>
+            <p class="highlight">그럼에도 불구하고, 나는 너를 용서하고 사랑하게 될 거야 - 사랑하게 될 거야</p>
+            <p>People always told me, 'Be careful of what you do' - Billie Jean</p>
+        
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2>입덕 포인트</h2>
+        <ul id="charm-list">
+            <li>귀에 쏙쏙 박히는 트렌디한 비트와 멜로디</li>
+            <li>자기의 삶을 투영하는 감성적인 가사</li>
+        </ul>
+    </section>
+
+    <section class="track-section">
+        <h2>믹스테잎 플레이리스트</h2>
+        <table id="track-table">
+            <thead>
+                <tr>
+                    <th>가수명</th>
+                    <th>곡명</th>
+                    <th>Play Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BIG Naughty</td>
+                    <td>Vancouver2</td>
+                    <td>3:22</td>
+                </tr>
+                <tr>
+                    <td>Code Kunst</td>
+                    <td>O</td>
+                    <td>3:32</td>
+                </tr>
+                <tr>
+                    <td>Beenzino</td>
+                    <td>Aqua Man</td>
+                    <td>3:46</td>
+                </tr>
+                <tr>
+                    <td>HANRORO</td>
+                    <td>사랑하게 될 거야</td>
+                    <td>2:45</td>
+                </tr>
+                <tr>
+                    <td>Michael Jakson</td>
+                    <td>Billie Jean</td>
+                    <td>4:53</td>
+                </tr>
+                <tr>
+                    <td>NewJeans</td>
+                    <td>Hype Boy</td>
+                    <td>2:59</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer id="album-footer">
+        <button class="listen-btn">전곡 스밍하러 가기</button>
+    </footer>
+</body>
+</html>
